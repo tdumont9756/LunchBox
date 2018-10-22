@@ -1,0 +1,28 @@
+
+
+Git Workflow:
+
+Since for the time being, I will be the only one working on the project, I will keep it fairly simple.  If in the 
+event that more people join on, I will implement a more indepth workflow that best fits the project.
+
+Branches:
+
+Master Branch:
+1) Master will be the projection ready code.  
+2) This is the code that will be put into production on the server
+3) Hotfixes will pull directly from Master Branch and merge back into it.
+4) Stage will pull from this branch and merge into master on release
+
+Stage:
+1) Stage is where code waits for release.  
+2) It is where Dev branchs will pull from
+3) Once all testing is done and I confirm that stage is stable, it merges into master.
+
+Dev Branches:
+1) These are genral purpose development branches. 
+2) Cut a new branch to work on a ticket, issue, exc
+3) After testing code, it is moved back into stage to await release
+
+Hotfix Branch:
+1) These are cut from Master in the event that there is a hotfix that needs to be implemented. 
+2) Work is done one the hotfix branch and then merged back into master and into stage 
